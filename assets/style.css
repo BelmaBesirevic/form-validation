@@ -54,10 +54,14 @@ form h2 {
   width: 20rem;
 }
 
-form .btn {
-  width: 20rem;
+.btn {
+  width: 100%;
   font-size: 18px;
   margin-top: 10px;
+  border: none;
+  padding: 0.4rem 0px;
+  background-color: #3185FC;
+  color: #fff;
 }
 
 .input__control.success {
