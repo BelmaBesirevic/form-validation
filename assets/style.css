@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.page__container {
+  position: relative;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+
+}
+
+.project__heading-2 {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.form__container {
+  margin: 0 auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  padding: 1rem 2rem;
+  width: 390px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form h2 {
+  text-align: center;
+}
+
+.form__control {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5px;
+}
+
+.input__control {
+  padding: 3px 7px;
+  width: 20rem;
+}
+
+form .btn {
+  width: 20rem;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.input__control.success {
+  border: 3px solid #4bb543;
+}
+
+.success {
+  border: 3px solid #4bb543;
+}
+
+.input__control.error {
+  border: 3px solid hsl(348, 83%, 67%);
+}
+
+.form__control small {
+  color: hsl(348, 83%, 47%);
+  /* position: absolute;
+  top: 0;
+  bottom: 0; */
+  visibility: hidden;
+}
+
+.form__control.error small {
+  visibility: visible;
+}
+
+.fa-regular {
+  position: absolute;
+  right: 1rem;
+  top: 24px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.fa-regular:hover {
+  color: hsl(245, 100%, 70%);
+}
+
+/* Progress Bar */
+.progress__container {
+  margin-top: 10px;
+  width: 100%;
+  height: 3px;
+  background-color: #ebebeb;
+}
+
+.progress-bar {
+  width: 5%;
+  height: 3px;
+  background-color: #777;
+  transition: all 0.4s ease-in;
+}
+
+/* Password Conditions */
+.pass__strength-list {
+  margin: 10px 0px 15px 0px;
+}
+
+.pass__strength-list_item > span {
+  font-size: 12px;
+}
+
+.pass__strength-list_item .fa-circle {
+  font-size: 7px;
+}
+
+/* check icon */
+.pass__strength-list_item .fa-check {
+  color: green;
+}
+
+/* Progress bar */
+.pb-25 {
+  background-color: #ef476f;
+  width: 25%;
+}
+.pb-50 {
+  background-color: #ffd166;
+  width: 50%;
+}
+.pb-75 {
+  background-color: #06d6a0;
+  width: 75%;
+}
+.pb-100 {
+  background-color: #118ab2;
+  width: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  left: 0;
+  text-align: center;
+}

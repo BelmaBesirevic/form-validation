@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <div class="page__container">
+          <div class="container">
+            <h1 class="project__heading-2">Form with Validation</h1>
+            <div class="form__container">
+              <form id="form">
+                <h2>Create an Account</h2>
+
+                <div class="form__control">
+                  <label for="username">Username</label>
+                  <input
+                    type="text"
+                    id="username"
+                    placeholder="Enter Username"
+                    class="input__control"
+                  />
+
+                  <small>Error Message</small>
+                </div>
+
+                <div class="form__control">
+                  <label for="email">Email</label>
+                  <input
+                    type="text"
+                    id="email"
+                    placeholder="Enter Email"
+                    class="input__control"
+                  />
+                  <small>Error Message</small>
+                </div>
+
+                <div class="form__control">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter Password"
+                    class="input__control password__control"
+                  />
+                  <i class="fa-regular fa-eye"></i>
+                  <small class="password-message">Error Message</small>
+
+                  <!-- Progress Bar -->
+                  <div class="progress__container">
+                      <div class="progress-bar" id="password-strength"></div>
+                  </div>
+
+                  <!-- Password Strength List -->
+                  <ul class="pass__strength-list">
+
+                    <li class="pass__strength-list_item">
+                      <span class="pass__low-upper-case">
+                        <i class="fa-solid fa-circle"></i>
+                        Lowercase & Uppercase
+                      </span>
+                    </li>
+
+                    <li class="pass__strength-list_item">
+                      <span class="pass__numbers">
+                        <i class="fa-solid fa-circle"></i>
+                        Number (0-9)
+                      </span>
+                    </li>
+
+                    <li class="pass__strength-list_item">
+                      <span class="pass__special-chars">
+                        <i class="fa-solid fa-circle"></i>
+                        Special character (!,%,&,#,$,^,*,?,_,~)
+                      </span>
+
+                      <li class="pass__strength-list_item">
+                        <span class="pass__min-chars">
+                          <i class="fa-solid fa-circle"></i>
+                          At least 8 characters
+                      </span>
+                    </li>
+                  </ul>
+
+                </div>
+
+                <div class="form__control">
+                  <label for="password2">Confirm Password</label>
+                  <input
+                    type="password"
+                    id="password2"
+                    placeholder="Confirm Password"
+                    class="input__control"
+                  />
+                  <i class="fa-regular fa-eye"></i>
+                  <small>Error Message</small>
+                </div>
+
+                <button class="btn">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">Copyright Belma Besirevic 2022</footer>
+    </div>
+
+    <!-- scripts -->
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
